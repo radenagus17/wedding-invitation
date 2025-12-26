@@ -65,10 +65,10 @@ export default function CoupleStorySection() {
               { year: "2025", event: "We say 'I do' with our beloved ones" },
             ].map((item, idx) => (
               <motion.div key={idx} variants={itemVariants} className="flex gap-4 sm:gap-6">
-                <div className="flex-shrink-0 pt-1">
+                <div className="shrink-0 pt-1">
                   <p className="font-serif text-xl sm:text-2xl text-primary font-semibold min-w-fit">{item.year}</p>
                 </div>
-                <div className="flex-grow pt-1 border-l-2 border-primary/30 pl-4 sm:pl-6">
+                <div className="grow pt-1 border-l-2 border-primary/30 pl-4 sm:pl-6">
                   <p className="text-muted-foreground text-sm sm:text-base">{item.event}</p>
                 </div>
               </motion.div>
