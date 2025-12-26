@@ -7,11 +7,12 @@ import GreetingsSection from "@/components/greetings-section"
 import GivingSection from "@/components/giving-section"
 import FooterSection from "@/components/footer-section"
 import AudioPlayer from "@/components/audio-player"
+const audioUrl = "/music/romantic-saxophone.mp3"
 
 export default function Home() {
   return (
     <main className="w-full overflow-hidden">
-      <AudioPlayer audioUrl={"/music/romantic-axophone.mp3"} autoPlay={true} />
+      <AudioPlayer audioUrl={audioUrl} />
       <HeroSection />
       <CoupleStorySection />
       <EventDetailsSection />
